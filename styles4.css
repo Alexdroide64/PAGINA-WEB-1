@@ -1,0 +1,42 @@
+/* ==========================================================================
+    STYLES3.CSS - RP Suministros y Servicios - Página de Contacto
+    ==========================================================================
+    Autor: Gabriel Alexander Padrón Granados
+    Descripción: Estilos exclusivos para la sección de servicios del sitio web.
+========================================================================== */
+
+
+/* Estilos Generales */
+.map-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Color de fondo elegante */
+    text-align: center;
+}
+
+.map-wrapper {
+    max-width: 900px; /* Mantiene la sección centrada y con buen tamaño */
+    margin: 0 auto;
+}
+
+.map-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Texto oscuro para mejor lectura */
+}
+
+/* Contenedor del Mapa */
+.map-container {
+    width: 100%;
+    height: 450px; /* Altura fija para evitar cambios bruscos */
+    border-radius: 10px; /* Bordes redondeados para un diseño más moderno */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el mapa */
+}
+
+/* Ajuste del iframe */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

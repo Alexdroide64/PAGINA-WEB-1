@@ -1,0 +1,184 @@
+/* ==========================================================================
+    STYLES3.CSS - RP Suministros y Servicios - Página de Servicios
+    ==========================================================================
+    Autor: Gabriel Alexander Padrón Granados
+    Descripción: Estilos exclusivos para la sección de servicios del sitio web.
+========================================================================== */
+
+/* ==================== RESET & BASE ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* ==================== SERVICIOS ==================== */
+
+.services-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-services {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-services h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-shadow: 2px 2px 5px #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.intro-services p {
+    font-size: 1.15em;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ========== Tarjetas de Servicios ========== */
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    flex: 1 1 calc(33.333% - 30px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    font-size: 1.6em;
+    margin: 20px 0 10px;
+    color: #ff2d95;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.service-card p {
+    padding: 0 20px 25px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* ========== Bloques informativos con imagen y texto ========== */
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.info-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-block img {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-block div {
+    flex: 1;
+}
+
+.info-block h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff2d95;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.info-block p {
+    font-size: 1.15em;
+    color: #ffffff;
+}
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) {
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+
+    .info-block, .info-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-block img, .info-block div {
+        width: 100%;
+    }
+}
+
+/* ==================== Extras ==================== */
+
+.section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #eaeaea;
+    margin: 60px 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0078D4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Servicios - RP Suministros y Servicios</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/icono.jpg" type="image/x-icon" />
+
+    <!-- Meta Información -->
+    <meta name="description" content="Descubre nuestros servicios especializados para impulsar la tecnología de tu empresa." />
+    <meta name="keywords" content="servicios tecnológicos, consultoría IT, soluciones empresariales, iluminación, automatización" />
+
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles3.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Pantalla de Carga -->
+    <div id="loader">
+        <img src="images/Engranaje.png" alt="Cargando..." class="loader-icon" />
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ==================== HEADER ================ -->
+    <!-- ============================================ -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo2.png" alt="Logo RP Suministros y Servicios" />
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- ==================== HERO ================== -->
+    <!-- ============================================ -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contáctenos</h1>
+            <p>Tienes un proyecto de iluminacion? quieres saber que luminaria es la correcta? .....acercate con nosotros, contamos con personal capacitado para darte asesoria y ofrecerte la que mejor se adecue a tus necesidades.
+                Dejanos un comentario ó envia un inbox y nos pondremos en contacto contigo.</p>
+                <p>SI NO LO ENCUENTRAS, TE LO CONSEGUIMOS!!</p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- =============== FORMULARIO ================= -->
+    <!-- ============================================ -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2 class="form-title">Solicita una Consulta Profesional</h2>
+            <p class="form-description">Nuestro equipo responderá a tu solicitud lo antes posible. Llena el siguiente formulario para comenzar.</p>
+    
+            <form id="contact-form" action="#" method="POST" novalidate>
+                <div class="form-group">
+                    <label for="fullname">Nombre completo <span>*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="company">Empresa u Organización</label>
+                    <input type="text" id="company" name="company" placeholder="" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="service">Tipo de Servicio <span>*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Asesoria">Asesoría Técnica Profesional</option>
+                        <option value="Visitas">Visitas de Obra</option>
+                        <option value="Proveeduria">Proveeduría y Suministro de Equipos</option>
+                        <option value="Instalacion">Instalación y Supervisión Técnica</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Mensaje <span>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe tus necesidades o preguntas..." required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ==================== MAPA ================== -->
+    <!-- ============================================ -->
+    <section class="map-section">
+        <div class="map-wrapper">
+            <h2 class="map-title">Nuestra Ubicación</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.7759493394838!2d-97.91347023016648!3d22.36208721865092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7fdb75051c785%3A0x369a1be10b7bd358!2sRP%20SUMINISTROS%20Y%20SERVICIOS%20SA%20DE%20CV!5e0!3m2!1ses!2smx!4v1745883184431!5m2!1ses!2smx"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="contact-card">
+        <h2>Información de contacto</h2>
+
+        <div class="info-block">
+            <h3>Dirección:</h3>
+            <p>Altamira, México, 89606</p>
+        </div>
+
+        <div class="info-block">
+            <h3>Celular:</h3>
+            <p>(+52) 833 312 4799</p>
+        </div>
+
+        <div class="info-block">
+            <h3>Correo Electrónico:</h3>
+            <p>gerardo.romero@rpsuministros.com</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ==================== FOOTER ================ -->
+    <!-- ============================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/Logo2.png" alt="Logo RP Footer" />
+                </a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook-icon"></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter-icon"></a>
+                <a href="https://youtube.com" target="_blank" class="social-icon youtube-icon"></a>
+            </div>
+
+            <p>&copy; 2025 RP Suministros y Servicios S.A. de C.V. | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS Principal -->
+    <script src="script.js"></script>
+</body>
+</html>

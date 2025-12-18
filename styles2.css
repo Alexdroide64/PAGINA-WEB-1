@@ -1,0 +1,155 @@
+/* ==========================================================================
+    STYLES3.CSS - RP Suministros y Servicios - Página de Sobre Nosotros
+    ==========================================================================
+    Autor: Gabriel Alexander Padrón Granados
+    Descripción: Estilos exclusivos para la sección de servicios del sitio web.
+========================================================================== */
+
+/* Sección "Sobre Nosotros" */
+.about-us {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #191d3a;
+    border-top: 1px solid #00f0ff22;
+    border-bottom: 1px solid #00f0ff22;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #22264d;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+}
+
+.about-us h2 {
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00f0ff;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.about-us h3 {
+    font-size: 28px;
+    font-family: 'Orbitron', sans-serif;
+    color: #ff2d95;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+/* ====================== HERO ======================= */
+
+.hero {
+    background-image: url('images/BIENVENIDA3.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 10, 40, 0.6);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #ffffffdd;
+}
+
+.cta-button {
+    background-color: #ff2d95;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px #ff2d9577;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #ff2d95;
+    box-shadow: 0 0 20px #ff2d95aa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+    }
+
+    .about-us h2 {
+        font-size: 32px;
+    }
+
+    .about-us h3 {
+        font-size: 24px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

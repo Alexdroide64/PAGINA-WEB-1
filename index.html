@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RP Suministros y Servicios S.A. de C.V.</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/icono.jpg" type="image/x-icon" />
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Meta Descripción -->
+    <meta name="description" content="RP Suministros y Servicios ofrece soluciones tecnológicas avanzadas para optimizar los procesos de tu empresa." />
+    <meta name="keywords" content="soluciones tecnológicas, servicios IT, RP Suministros, tecnología avanzada" />
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loader">
+        <img src="images/Engranaje.png" alt="Cargando..." class="loader-icon" />
+    </div>
+    
+    <!-- ============================================ -->
+    <!-- ==================== HEADER ================ -->
+    <!-- ============================================ -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo2.png" alt="Logo RP Suministros y Servicios" />
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Damos soluciones en iluminación LED, pero vendemos lo que el cliente necesite.</h1>
+            <p>Te ofrecemos productos diseñados para cumplir estándares y certificaciones internacionales de vialidad. Luminaria de vialidad LED para su uso en exteriores, resistente al impacto y variaciones de temperatura. Ideal para avenidas, caminos, calles y autopistas.</p>
+            <a href="services.html" class="cta-button">Ver Servicios</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <!-- About Us Section con video de fondo -->
+    <section class="video-hero">
+        <video autoplay loop muted playsinline class="video-background">
+            <source src="videos/presentacion.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+        </video>
+        <div class="overlay"></div>
+        <div class="video-content">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Más de 18 años ofreciendo soluciones integrales a empresas con tecnología de última generación. Nuestra experiencia y profesionalismo nos respaldan. Confia en nosotros, cual quiera que sea tu necesidad... nosotros la podemos ✨iluminar.</p>
+            <a href="about.html" class="cta-button">Leer Más</a>
+        </div>
+    </section>
+
+
+    <!-- Servicios -->
+    <section class="services">
+        <div class="services-container">
+            <h2>Servicios</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Asesoria</h3>
+                    <p>Brindan asesoramiento personalizado para cada cliente, realizando análisis de requerimientos, estudios de iluminación y diseño de proyectos completos. Su equipo está compuesto por especialistas que garantizan soluciones eficientes, normativas y con alto rendimiento energético.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Proveeduria</h3>
+                    <p>Distribuyen productos a nivel nacional, con logística profesional que asegura entregas a tiempo y en óptimas condiciones. Trabajan con marcas reconocidas como SUPRA y Jungo Lighting, lo que respalda la calidad de los equipos que suministran.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Visita de Obra</h3>
+                    <p>Realizan inspecciones presenciales en el sitio para conocer el entorno real del proyecto. Durante estas visitas, toman medidas, evalúan condiciones técnicas y ajustan soluciones. También ofrecen acompañamiento durante la ejecución para asegurar la correcta instalación del sistema de iluminación.</p>
+                </div>
+            </div>
+            <a href="services.html" class="cta-button">Ver Todos los Servicios</a>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2 class="form-title">Solicita una Consulta Profesional</h2>
+            <p class="form-description">Nuestro equipo responderá a tu solicitud lo antes posible. Llena el siguiente formulario para comenzar.</p>
+    
+            <form id="contact-form" action="#" method="POST" novalidate>
+                <div class="form-group">
+                    <label for="fullname">Nombre completo <span>*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="company">Empresa u Organización</label>
+                    <input type="text" id="company" name="company" placeholder="" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="service">Tipo de Servicio <span>*</span></label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Asesoria">Asesoría Técnica Profesional</option>
+                        <option value="Visitas">Visitas de Obra</option>
+                        <option value="Proveeduria">Proveeduría y Suministro de Equipos</option>
+                        <option value="Instalacion">Instalación y Supervisión Técnica</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Mensaje <span>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe tus necesidades o preguntas..." required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ==================== FOOTER ================ -->
+    <!-- ============================================ -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/Logo2.png" alt="Logo RP Footer" />
+                </a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100070430063572"_blank" class="social-icon facebook-icon"></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter-icon"></a>
+                <a href="https://youtube.com" target="_blank" class="social-icon youtube-icon"></a>
+            </div>
+            <p>&copy; 2025 RP Suministros y Servicios S.A. de C.V. | Todos los derechos reservados.</p>
+        </div>
+    </footer>     
+
+    <!-- JS Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
